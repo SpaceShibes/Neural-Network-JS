@@ -28,7 +28,7 @@ function Perceptron(input, hidden, output)
 Perceptron.prototype = new Network();
 Perceptron.prototype.constructor = Perceptron;
 
-var myPerceptron = new Perceptron(2,3,1);
+var myPerceptron = new Perceptron(2,20,1);
 var myTrainer = new Trainer(myPerceptron);
  
 myTrainer.XOR(); // { error: 0.004998819355993572, iterations: 21871, time: 356 }
